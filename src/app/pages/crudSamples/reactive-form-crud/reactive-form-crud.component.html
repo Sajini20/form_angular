@@ -1,0 +1,25 @@
+<div class="card-body">
+    <label for="datePicker"> Date:</label>
+    <input type="date" id="datePicker" name="datePicker">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+              
+                <th>Name</th>
+                <th>Service_id</th>
+                <th>Manager</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let dealer of dealersArray; let sr = index">
+                <td>{{ sr+1 }}</td>
+                <td>{{ dealer.Name }}</td>
+                <td>{{ dealer.Service_id }}</td>
+                <td>{{ dealer.Manager }}</td>
+                <td>
+                    
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,44 @@
+<form>
+    <!-- First Row -->
+    <div class="row">
+        <!-- Column 1 -->
+        <div class="col-6">
+            <label for="">Today's Date</label>
+            <input type="date" name="todayDate" class="form-control" [(ngModel)]="formData.todayDate">
+        </div>
+        <!-- Column 2 -->
+        <div class="col-6">
+            <label for="">Supervisor Name</label>
+            <input type="text" name="supervisorName" class="form-control" [(ngModel)]="formData.supervisorName" placeholder="Supervisor Name">
+        </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row">
+        <!-- Column 1 -->
+        <div class="col-6">
+            <label for="">Service Number</label>
+            <input type="text" name="serviceNumber" class="form-control" [(ngModel)]="formData.serviceNumber" placeholder="Service Number">
+        </div>
+    </div>
+
+    <!-- Third Row -->
+    <div class="row">
+        <!-- Column 1 -->
+        <div class="col-12">
+            <label for="sub1"><input type="checkbox" id="sub1" name="sub1" [(ngModel)]="formData.sub1"> Sub_1</label><br>
+            <label for="sub2"><input type="checkbox" id="sub2" name="sub2" [(ngModel)]="formData.sub2"> Sub_2</label><br>
+            <label for="sub3"><input type="checkbox" id="sub3" name="sub3" [(ngModel)]="formData.sub3"> Sub_3</label><br>
+            <label for="sub4"><input type="checkbox" id="sub4" name="sub4" [(ngModel)]="formData.sub4"> Sub_4</label><br>
+            <label for="sub5"><input type="checkbox" id="sub5" name="sub5" [(ngModel)]="formData.sub5"> Sub_5</label><br>
+        </div>
+    </div>
+
+    <!-- Fourth Row -->
+    <div class="row text-center pt-2">
+        <!-- Column 1 -->
+        <div class="col-12">
+            <button class="btn btn-sm btn-success" (click)="submitForm()">Submit</button>
+        </div>
+    </div>
+</form>
